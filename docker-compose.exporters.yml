@@ -1,9 +1,9 @@
-version: '2.1'
+version: '3.8'
 
 services:
 
   nodeexporter:
-    image: prom/node-exporter:v0.18.1
+    image: prom/node-exporter:latest
     container_name: nodeexporter
     volumes:
       - /proc:/host/proc:ro
